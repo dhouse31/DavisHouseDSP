@@ -1,0 +1,9 @@
+(3.4) Frequency of bins is the max frequency divided by the total number of bins. In this case:
+max frequency is 22050Hz (for 44100Hz sampling rate) divided by the number of bins which is the FFT size (len(x))/2
+Frequency resolution is then 22050/11025 = 2Hz
+
+(3.5) The frequency resolution would change because the final number of bins would change (based on the question above)
+
+(4.1) Using the rect window method returns the same result as without the window parameter. Using the hann window
+method will result in the same magnitude plot, but in the shape of a hann window (weighted cosine), the lengths of the 
+ffts are the same but the magnitudes differ.
